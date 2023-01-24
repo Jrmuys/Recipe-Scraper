@@ -28,7 +28,10 @@ class MyFoodAndFamilyScraper extends BaseScraper {
       });
 
       $('.krRecipeDirectionsDest').each((i, el) => {
-         const step = $(el).text().replace(/\s\s+/g, '');
+         let step = $(el).text().replace(/\s\s+/g, '').trim();
+         if (step.charAt(0) >= '0' && step.charAt(0) <= '9') {
+            step = step.slice(2);
+         }
          instructions.push(step);
       });
       this.recipe.time.total = $('krRDPcookText').text();
