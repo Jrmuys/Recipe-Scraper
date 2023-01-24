@@ -2,13 +2,15 @@
 
 **A NodeJS package for scraping recipes from the web.**
 
+Note: This is a fork of this repository https://github.com/jadkins89/Recipe-Scraper
+
 [![Build Status](https://travis-ci.org/jadkins89/Recipe-Scraper.svg?branch=master)](https://travis-ci.org/jadkins89/Recipe-Scraper)
 [![Coverage Status](https://coveralls.io/repos/github/jadkins89/Recipe-Scraper/badge.svg?branch=master)](https://coveralls.io/github/jadkins89/Recipe-Scraper?branch=master)
 
 ## Installation
 
 ```sh
-npm install recipe-scraper
+npm install @jrmuys/recipe-scraper
 ```
 
 ## Usage
